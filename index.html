@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/2664ce2542.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>AJAX témazáró</title>
+</head>
+<body>
+    <main class="container">
+
+        <section class="mb-3">
+            <h2>Add person</h2>
+            <form id="personForm" action="" method="post">
+                <div class="mb-3">
+                    <label for="name_input" class="form-label">Name:</label>
+                    <input type="text" id="name_input" class="form-control" placeholder="Name" required minlength="6">
+                </div>
+                <div class="mb-3">
+                    <label for="address_input" class="form-label">Address:</label>
+                    <input type="text" id="address_input" class="form-control" placeholder="Address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email_input" class="form-label">E-mail:</label>
+                    <input type="email" id="email_input" class="form-control" placeholder="E-mail" required>
+                </div>
+                <input type="hidden" id="personId">
+                <button class="btn btn-warning" type="submit">Submit</button>
+                <button class="btn btn-warning" type="button" id="save">Save</button>
+            </form>
+        </section>
+
+        <section class="mb-3">
+            <h2>People</h2>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>E-mail</th>
+                        <th>Delete</th>
+                        <th>Modify</th>
+                    </tr>
+                </thead>
+                <tbody id="peopleTable">
+                    <!--A javascript-el töltjük fel-->
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <div class="mb-3">
+                <img src="" alt="Macska" id="kep">
+            </div>
+            <button id="gomb" class="btn btn-warning" type="button">New</button>
+        </section>
+    </main>
+</body>
+</html>
