@@ -50,7 +50,7 @@ $(function () {
             function (data, textStatus, jqXHR) {
                 if (textStatus === "success") {
                     $("#name_input").val("");
-                    $("#address_input").val();
+                    $("#address_input").val("");
                     $("#email_input").val("");
                     listPeople();
                 }
